@@ -1,0 +1,1 @@
+Simple QR Code link generator
