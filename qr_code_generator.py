@@ -14,7 +14,10 @@ def generate_qrcode(text):
     qr.make(fit=True)
     #Save the qrcode as an image
     img = qr.make_image(fill_color="black", back_color="white")
-    img.save("qrimg.png")
+    file_name = input("What would you like to name your QRCode file as: " )
+    img.save(file_name + ".png")
+    print("Your new QRCode has been created.")
 #Run the function
 
-generate_qrcode("https://pypi.org/project/qrcode/")
+url = input("Enter your url: ")
+generate_qrcode(url)
